@@ -1,0 +1,24 @@
+﻿<Window x:Name="PrimaryWindow" x:Class="MinecraftModProfileManagerV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MinecraftModProfileManagerV2"
+        mc:Ignorable="d"
+        Title="Tasty's ModProfileManagerV2" Height="268" Width="405" Loaded="PrimaryWindow__Init__" ResizeMode="NoResize" SizeToContent="Manual">
+    <Grid Margin="0,0,10,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="142*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="ProfilesSelector" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="202" Height="22" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Mod profiles" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="76" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="UseSelectedProfileButton" Content="Use Profile" HorizontalAlignment="Left" Margin="11,68,0,0" VerticalAlignment="Top" Height="20" Width="60" Grid.Column="1" Click="UseSelectedProfileButton_Click"/>
+        <Button x:Name="OpenInExplorerButton" HorizontalAlignment="Left" Margin="74,68,0,0" VerticalAlignment="Top" Content="OpenInExplorer" Grid.Column="1" Height="20" Width="92" Click="OpenInExplorerButton_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="AddNewProfileButton" Content="AddNew" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="20" Width="50" Grid.Column="1" Click="AddNewProfileButton_Click"/>
+        <TextBox x:Name="ProfileNameTextBox" HorizontalAlignment="Left" Margin="10,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="NewProfileName" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="26" Width="100" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="DeleteSelectedProfileButton" Content="Delete Profile" Grid.Column="2" HorizontalAlignment="Left" Margin="30,68,0,0" VerticalAlignment="Top" Click="DeleteSelectedProfileButton_Click"/>
+    </Grid>
+</Window>
